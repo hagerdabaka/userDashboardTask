@@ -1,0 +1,105 @@
+.container {
+    height: 100vh;
+}
+.backButton {
+    margin: 5% 5%;
+    a {
+        text-decoration: none;
+        border: 0.5px solid gray;
+        border-radius: 5px;
+        padding: 10px 10px;
+        font-size: 14px;
+        color: rgb(58, 57, 57);
+
+        &:hover {
+            color: white;
+            background-color: rgb(168, 167, 167);
+        }
+    }
+}
+
+.card {
+    width: 700px;
+    border: none;
+    border-radius: 15px;
+    padding: 8px;
+    background-color: #fcfcfc;
+    position: relative;
+    height: 370px;
+    box-shadow:
+        rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    .profile {
+        position: absolute;
+        top: -50px;
+        left: 38%;
+        height: 160px;
+        width: 160px;
+        border-radius: 50%;
+
+        img {
+            height: 150px;
+            width: 150px;
+            margin-top: 2px;
+            box-shadow: rgba(65, 65, 65, 0.356) 0px 0px 0px 3px;
+        }
+    }
+
+    .user-data {
+        margin: 1% 8%;
+        margin-top: 25%;
+
+        .colm {
+            margin: 4% 1%;
+            i {
+                color: rgba(25, 167, 6, 0.973);
+                font-size: 20px;
+                margin-right: 5%;
+            }
+            span {
+                font-size: 14px;
+                color: rgb(131, 130, 130);
+            }
+
+            .data {
+                margin: 2% 16%;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+// media Responsive
+
+@media only screen and (max-width: 1200px) {
+    .card {
+        height: 85vh;
+        box-shadow:
+            rgba(50, 50, 93, 0.25) 0px 0px 5px -3px,
+            rgba(0, 0, 0, 0.3) 0px 0px 0px 0px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .card {
+        margin-top: 6%;
+        height: 80vh;
+        box-shadow:
+            rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+            rgba(0, 0, 0, 0.3) 0px 1px 0px -1px;
+
+        .profile {
+            left: 33%;
+        }
+    }
+}
+@media only screen and (max-width: 400px) {
+    .card {
+        margin-top: 10%;
+        .profile img {
+            width: 70%;
+            height: 70%;
+        }
+    }
+}

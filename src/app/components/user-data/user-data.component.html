@@ -1,0 +1,56 @@
+<!--  Loader  -->
+<app-loader *ngIf="isLoading" class=""></app-loader>
+
+<div class="row">
+    <div class="col-lg-12 ">
+        <div class="backButton">
+            <a routerLink="/home"> <i class="fa-solid fa-arrow-left"></i> Back</a>
+        </div>
+    </div>
+</div>
+<div class="container ">
+    <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center align-items-center">
+            <div class="card">
+                <div class="profile">
+                    <img [src]="selectedUser.avatar" class="rounded-circle image-fluid" width="80">
+                </div>
+                <div class="user-data  d-flex justify-content-center align-items-center">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="colm">
+                                <i class="fa-solid fa-user"></i>
+                                <span>First name :</span>
+                                <div class="data"> {{selectedUser.first_name}}</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="colm">
+                                <i class="fa-solid fa-user-plus"></i>
+                                <span>Last name :</span>
+                                <div class="data"> {{selectedUser.last_name}}</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="colm">
+                                <i class="fa-solid fa-id-card"></i>
+                                <span> ID :</span>
+                                <div class="data"> {{selectedUser.id}}</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="colm">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>Email :</span>
+                                <div class="data"> {{selectedUser.email}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
